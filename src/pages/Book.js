@@ -49,6 +49,7 @@ export default function Book() {
           <p><strong>Short Description:</strong> {book.shortDescription || "No description available."}</p>
           <p><strong>Long Description:</strong> {book.longDescription}</p>
           <p><strong>Page Count:</strong> {book.pageCount}</p>
+          <p><strong>Page Count:</strong> {book.pageCount}</p>
           <p><strong>Published Date:</strong> {(book.publishedDate && typeof book.publishedDate === 'string')? book.publishedDate.slice(0,10) 
     : "No date available"
 }

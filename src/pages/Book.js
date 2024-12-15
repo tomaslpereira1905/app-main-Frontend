@@ -52,9 +52,11 @@ export default function Book() {
           <p><strong>Published Date:</strong> {(book.publishedDate && typeof book.publishedDate === 'string')? book.publishedDate.slice(0,10) 
     : "No date available"
 }
+
 </p>
 
           <p><strong>Status:</strong> {book.status}</p>
+          <p><strong>Categories:</strong>{book.categories?.join(",")}</p>
           <button
             className="btn btn-primary mt-3"
             onClick={() => window.history.back()}
